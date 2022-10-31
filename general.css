@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Summary Notes';
+    src: url(summary-notes-font/SummaryNotesRegular-Ea5ln.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Summary Notes';
+    color: whitesmoke;
+}
+
+body {
+    background-color: black;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Navbar */
+#top-cont {
+    grid-column: 1 / -1;
+    background-color: cadetblue;
+    height: 70px;
+}
+
+#nav {
+    /* position: relative; */
+    width: 100%;
+    height: inherit;
+}
+
+ul {
+    /* background-color: rgba(255, 0, 0, 0.4);  */
+    width: 600px;
+    float: right;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Content */
+#content {
+    grid-column: span 12;
+    background-color: red;
+}
+
+#bot-cont {
+    grid-column: 1 / -1;
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 480px) {
+    /* #top-cont {
+        grid-column: span 6;
+        background-color: green;
+    } */
+}
