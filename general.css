@@ -1,58 +1,76 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     color: whitesmoke;
 }
 
-
-ul, a {
-    text-decoration: none;
-    list-style: none;
+body {
+    background-color: black;
 }
 
-hr {
-    width: 1px;
-    size: 40;
-}
-
-#top-cont {
-    background-color: blueviolet;
-    padding: 10px;
-}
-
+/* Navbar */
 #nav {
+    /* padding: 10px; */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    background-color: blueviolet;
 }
 
+.nav-gap {
+    margin: 10px 0;
+}
+
+/* Logo nav */
 .logo {
-    height: 65px;
+    width: 13%;
+    height: 100%;
+    display: inline-block;
 }
 
 #logo {
-    width: 65px;
-    height: 65px;
+    width: 120px;
+    height: 55px;
+    margin: 0 auto;
+    display: block;
 }
 
+/* All hr in nav */
+#nav hr {
+    height: 75px;
+    display: inline-block;
+    border: none;
+    border-left: 2px solid green;
+}
+
+/* Links */
 .links {
-    width: 35%;
-    margin-right: 50px;
+    margin: 0 2.5%;
+    width: 65%;
+    display: flex;
     text-transform: uppercase;
 }
 
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-link {
+.links a, .links li {
+    text-decoration: none;
+    list-style: none;
     text-align: center;
 }
 
+.links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navigation {
+    width: 50%;
+    align-items: center;
+}
+
+.icon {
+    background-color: blue;
+}
+
+/*
 #cntme{
     background-color: blue;
     padding: 15px;
