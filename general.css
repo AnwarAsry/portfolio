@@ -13,6 +13,7 @@ body {
     /* padding: 10px; */
     display: flex;
     background-color: blueviolet;
+    height: 75px;
 }
 
 .nav-gap {
@@ -43,9 +44,10 @@ body {
 
 /* Links */
 .links {
-    margin: 0 2.5%;
+    padding-left: 2.5%;
     width: 65%;
     display: flex;
+    justify-content: space-between;
     text-transform: uppercase;
 }
 
@@ -55,19 +57,33 @@ body {
     text-align: center;
 }
 
-.links ul {
+/* Navlinks */
+#navigation {
+    width: 50%;
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#navigation {
-    width: 50%;
-    align-items: center;
+/* Socials */
+#socials {
+    width: 35%;
+    background-color: blue;
 }
 
-.icon {
-    background-color: blue;
+.social-link {
+    padding: 10px;
+    border-radius: 20px;
+    height: fit-content;
+    line-height: 55px;
+    background-color: rgb(188, 188, 195);
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
 /*
