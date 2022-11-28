@@ -2,22 +2,32 @@
     margin: 0;
     padding: 0;
     color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
-    background-color: black;
+    background-color: #07111A;
 }
 
 /* Navbar */
 #nav {
-    /* padding: 10px; */
-    display: flex;
-    background-color: blueviolet;
     height: 75px;
+    display: flex;
+    overflow: hidden;
+    background-color: #0d1e2e;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 50px 0px black;
 }
 
 .nav-gap {
     margin: 10px 0;
+}
+
+/* If user scroll down navbar set top always */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Logo nav */
@@ -32,6 +42,7 @@ body {
     height: 55px;
     margin: 0 auto;
     display: block;
+    border-radius: 10px;
 }
 
 /* All hr in nav */
@@ -39,12 +50,12 @@ body {
     height: 75px;
     display: inline-block;
     border: none;
-    border-left: 2px solid green;
+    border-left: 2px solid #0e2335;
 }
 
 /* Links */
 .links {
-    padding-left: 2.5%;
+    padding: 0 1% 0 2.5%;
     width: 65%;
     display: flex;
     justify-content: space-between;
@@ -60,36 +71,46 @@ body {
 /* Navlinks */
 #navigation {
     width: 50%;
-    align-items: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
 /* Socials */
 #socials {
-    width: 35%;
-    background-color: blue;
+    width: fit-content;
+    direction: rtl;
 }
 
 .social-link {
-    padding: 10px;
-    border-radius: 20px;
     height: fit-content;
+    padding: 10px;
+    margin-right: 10px;
     line-height: 55px;
-    background-color: rgb(188, 188, 195);
+    border-radius: 20px;
+    background-color: #1d374e;
+    /* box-shadow: 0 0 15px black; */
 }
 
 .icon img {
     width: 20px;
     height: 20px;
     vertical-align: middle;
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
 }
 
-/*
+.contact {
+    margin: auto;
+}
+
 #cntme{
-    background-color: blue;
-    padding: 15px;
     width: 120px;
-    border-radius: 10px;
-} */
+    margin: auto 0;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f84b20e1;
+    /* box-shadow: 0 0 15px 0 black; */
+}
