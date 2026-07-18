@@ -1,7 +1,6 @@
 import { Project } from "@models/Project";
 import { TagsPresentation } from "@components/Tags/TagsPresentation";
 import { FaArrowRight } from "react-icons/fa6";
-import noImage from "../../../public/images/no-image.png";
 import { Container } from "@components/Container";
 
 interface IProjectCardProps {
@@ -11,14 +10,6 @@ interface IProjectCardProps {
 export const ProjectCard = ({ project }: IProjectCardProps) => {
     return (
         <div className="w-fit h-fit lg:max-h-80 flex gap-4">
-            {project.image && (
-                <img
-                    className="w-100 object-cover hidden rounded-2xl lg:block"
-                    src={project.image ? project.image : noImage}
-                    alt={project.name || "Project preview"}
-                    loading="lazy"
-                />
-            )}
             <div className="flex flex-col gap-4">
                 <Container className="max-w-xl flex-2 overflow-hidden">
                     {/* Live Demo Link */}
@@ -38,17 +29,17 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
                     )}
 
                     {/* Project Title */}
-                    <h3 className="mt-1 mb-0.5 font-bold text-xl sm:text-3xl text-headingColor">
+                    <h3 className="mt-1 mb-0.5 font-bold text-xl sm:text-2xl text-headingColor">
                         {project.name}
                     </h3>
 
                     {/* Project Dates */}
-                    <span className="mb-3 block text-base font-normal text-gray-400">
+                    <span className="mb-3 block text-sm font-normal text-gray-400">
                         {project.created} - {project.lastUpdated ? project.lastUpdated : "Present"}
                     </span>
 
                     {/* Project Description */}
-                    <p className="text-lg text-gray-400">
+                    <p className="text-base text-gray-400">
                         {project.description || "No description available"}
                     </p>
 

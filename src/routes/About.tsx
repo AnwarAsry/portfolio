@@ -1,4 +1,5 @@
 import profile from '@assets/Images/dev.jpeg'
+import { Container } from '@components/Container';
 import { TextBox } from '@components/TextBox';
 
 export const About = () => {
@@ -6,7 +7,8 @@ export const About = () => {
         <section className="max-w-2xl mb-20 mx-auto">
             <img className="w-full h-120 rounded-xl object-cover" src={profile} alt="Portrait of Anwar Asry, frontend developer" />
             <h2 className="my-10 text-center text-4xl font-bold">About Me</h2>
-            <div className="px-2">
+
+            <Container className='flex flex-col gap-10'>
                 <TextBox>
                     Hi, I’m Anwar Asry, a recent graduate of Medieinstitutet, specializing in frontend development.
                     I have built a strong foundation in HTML, CSS, and JavaScript/TypeScript. For my exam project,
@@ -26,7 +28,7 @@ export const About = () => {
                     father’s allotment, where I help him with gardening and experiment with different techniques
                     for a bountiful harvest.
                 </TextBox>
-            </div>
+            </Container>
         </section>
     );
 }
